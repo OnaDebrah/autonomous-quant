@@ -1,0 +1,10 @@
+**
+!Dockerfile
+!pyproject.toml
+!README.md
+!LICENSE
+!src/
+!src/**
+**/__pycache__/
+**/*.egg-info/
+**/*.py[cod]
