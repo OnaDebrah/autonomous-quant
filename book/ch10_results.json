@@ -1,0 +1,124 @@
+{
+  "seed": 20261121,
+  "proxy_losses": {
+    "true_variance": {
+      "qlike": 1.2700725591289768,
+      "mse_variance": 3.2783223430777437,
+      "mae_variance": 1.0957045270771226,
+      "mse_volatility": 0.4577575345908124
+    },
+    "half_the_true_variance": {
+      "qlike": 1.5745574033781902,
+      "mse_variance": 3.6851343832992196,
+      "mae_variance": 0.9704683065233445,
+      "mse_volatility": 0.4200290424818529
+    },
+    "one_and_a_half_times": {
+      "qlike": 1.3429936589674216,
+      "mse_variance": 3.697025693319017,
+      "mae_variance": 1.3626665163490972,
+      "mse_volatility": 0.6186291285171055
+    }
+  },
+  "many_instruments": {
+    "fixed_threshold": {
+      "mean_discoveries": 13.62275,
+      "mean_false": 4.49995,
+      "false_discovery_rate": 0.3163107460820483,
+      "power": 0.91228
+    },
+    "benjamini_hochberg": {
+      "mean_discoveries": 6.492,
+      "mean_false": 0.3485,
+      "false_discovery_rate": 0.044646505855255855,
+      "power": 0.61435
+    },
+    "fixed_threshold_any_pass_when_none_real": 0.99485
+  },
+  "calibration_tolerance": {
+    "30": {
+      "per_band": {
+        "0.05": 0.015635510128533037,
+        "0.1": 0.025826788661909905,
+        "0.15": 0.11781388627376355,
+        "0.2": 0.10526613344065261,
+        "0.3": 0.16106481236770165,
+        "0.5": 0.20048842206597328
+      },
+      "any_of_six_bands": 0.49230909592624084
+    },
+    "100": {
+      "per_band": {
+        "0.05": 3.705407617760059e-05,
+        "0.1": 0.0008075738743662519,
+        "0.15": 0.0033910005455959347,
+        "0.2": 0.00839289646725383,
+        "0.3": 0.021385615482581,
+        "0.5": 0.03520020021770476
+      },
+      "any_of_six_bands": 0.06772019998842893
+    },
+    "300": {
+      "per_band": {
+        "0.05": 1.839761676336593e-11,
+        "0.1": 7.135370760913418e-08,
+        "0.15": 2.2004276123421818e-06,
+        "0.2": 1.496117573207556e-05,
+        "0.3": 0.00012239516930334648,
+        "0.5": 0.0004106214129933061
+      },
+      "any_of_six_bands": 0.0005501900809455895
+    }
+  },
+  "stability_index": {
+    "100": {
+      "mean": 0.19094183514227597,
+      "theory_mean": 0.18,
+      "p95": 0.36597818243664787,
+      "theory_p95": 0.33837955209240894,
+      "share_above_0.10": 0.85255,
+      "share_above_0.25": 0.22405
+    },
+    "500": {
+      "mean": 0.036342486636757876,
+      "theory_mean": 0.036,
+      "p95": 0.06893371647865089,
+      "theory_p95": 0.0676759104184818,
+      "share_above_0.10": 0.0029,
+      "share_above_0.25": 0.0
+    },
+    "5000": {
+      "mean": 0.003621515616116233,
+      "theory_mean": 0.0036,
+      "p95": 0.006858876797479048,
+      "theory_p95": 0.006767591041848179,
+      "share_above_0.10": 0.0,
+      "share_above_0.25": 0.0
+    }
+  },
+  "pooled": {
+    "true_sd_of_pooled_mean": 0.05192410946808728,
+    "mean_naive_se": 0.012890498050957976,
+    "mean_clustered_se": 0.05102178696286703,
+    "naive_rejects_at_5pct_when_nothing_is_there": 0.62175,
+    "clustered_rejects": 0.0565,
+    "effective_symbols": 3.1847133757961785
+  },
+  "losing_skill": {
+    "0.2": {
+      "t_statistic_after_120_forecasts": 2.1908902300206647,
+      "mean_forecasts_to_notice": 59.2555,
+      "median": 48.0
+    },
+    "0.3": {
+      "t_statistic_after_120_forecasts": 3.2863353450309964,
+      "mean_forecasts_to_notice": 38.303,
+      "median": 31.0
+    },
+    "0.5": {
+      "t_statistic_after_120_forecasts": 5.477225575051661,
+      "mean_forecasts_to_notice": 20.439,
+      "median": 17.0
+    }
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "seed": 20261128,
+  "allocation": {
+    "yield_per_study": [
+      0.012,
+      0.03,
+      0.015,
+      0.009
+    ],
+    "quality_given_pass": [
+      0.6,
+      0.5,
+      0.15,
+      0.3
+    ],
+    "252": {
+      "all_to_best_source": 45.36,
+      "all_to_highest_quality_source": 18.144000000000002,
+      "uniform": {
+        "discoveries": 25.573333333333334,
+        "share_of_budget_to_best_source": 0.24940696649029984
+      },
+      "thompson_quality": {
+        "discoveries": 26.07,
+        "share_of_budget_to_best_source": 0.2967592592592592
+      },
+      "thompson_yield": {
+        "discoveries": 29.776666666666667,
+        "share_of_budget_to_best_source": 0.4043937389770723
+      }
+    },
+    "756": {
+      "all_to_best_source": 136.07999999999998,
+      "all_to_highest_quality_source": 54.432,
+      "uniform": {
+        "discoveries": 75.07,
+        "share_of_budget_to_best_source": 0.25022560258671367
+      },
+      "thompson_quality": {
+        "discoveries": 78.37333333333333,
+        "share_of_budget_to_best_source": 0.30228395061728397
+      },
+      "thompson_yield": {
+        "discoveries": 110.47666666666667,
+        "share_of_budget_to_best_source": 0.6682488242210464
+      }
+    }
+  },
+  "censoring": {
+    "sharpe_0.0_limit_0.05": {
+      "true_mean_return": 0.00018668374931811674,
+      "share_dropped": 0.557975,
+      "mean_of_kept": 0.07251361469618758,
+      "share_positive_all": 0.50131,
+      "share_positive_kept": 0.8610485832249307,
+      "bounds_on_share_positive": [
+        0.380605,
+        0.9385800000000001
+      ]
+    },
+    "sharpe_0.0_limit_0.1": {
+      "true_mean_return": 0.00018668374931811674,
+      "share_dropped": 0.272645,
+      "mean_of_kept": 0.04048221851517779,
+      "share_positive_all": 0.50131,
+      "share_positive_kept": 0.6701473145850375,
+      "bounds_on_share_positive": [
+        0.48743499999999995,
+        0.7600800000000001
+      ]
+    },
+    "sharpe_1.0_limit_0.05": {
+      "true_mean_return": 0.04754150456823916,
+      "share_dropped": 0.400895,
+      "mean_of_kept": 0.09735145529454704,
+      "share_positive_all": 0.686245,
+      "share_positive_kept": 0.9150900092638186,
+      "bounds_on_share_positive": [
+        0.548235,
+        0.94913
+      ]
+    },
+    "sharpe_1.0_limit_0.1": {
+      "true_mean_return": 0.04754150456823916,
+      "share_dropped": 0.14937500000000004,
+      "mean_of_kept": 0.07096472531901675,
+      "share_positive_all": 0.686245,
+      "share_positive_kept": 0.7890551065393093,
+      "bounds_on_share_positive": [
+        0.67119,
+        0.820565
+      ]
+    }
+  },
+  "information_gain": {
+    "beta_1_1": {
+      "variance": 0.08333333333333333,
+      "expected_reduction": 0.027777777777777776,
+      "relative_to_uniform_prior": 1.0
+    },
+    "beta_2_1": {
+      "variance": 0.05555555555555555,
+      "expected_reduction": 0.013888888888888888,
+      "relative_to_uniform_prior": 0.5
+    },
+    "beta_2_2": {
+      "variance": 0.05,
+      "expected_reduction": 0.01,
+      "relative_to_uniform_prior": 0.36
+    },
+    "beta_3_3": {
+      "variance": 0.03571428571428571,
+      "expected_reduction": 0.00510204081632653,
+      "relative_to_uniform_prior": 0.18367346938775508
+    },
+    "beta_6_6": {
+      "variance": 0.019230769230769232,
+      "expected_reduction": 0.0014792899408284023,
+      "relative_to_uniform_prior": 0.05325443786982249
+    },
+    "beta_2_10": {
+      "variance": 0.010683760683760684,
+      "expected_reduction": 0.000821827744904668,
+      "relative_to_uniform_prior": 0.02958579881656805
+    },
+    "beta_11_11": {
+      "variance": 0.010869565217391304,
+      "expected_reduction": 0.0004725897920604915,
+      "relative_to_uniform_prior": 0.017013232514177693
+    }
+  },
+  "failures": {
+    "power_0.22": {
+      "likelihood_ratio_of_one_failure": 0.787878787878788,
+      "after_3": 0.4890781089128198,
+      "after_5": 0.30359669570713155,
+      "posterior_after_5_from_prior_10pct": 0.032632185770393216
+    },
+    "power_0.45": {
+      "likelihood_ratio_of_one_failure": 0.5527638190954774,
+      "after_3": 0.1688957907895073,
+      "after_5": 0.051605744010329004,
+      "posterior_after_5_from_prior_10pct": 0.005701280576043405
+    },
+    "power_0.8": {
+      "likelihood_ratio_of_one_failure": 0.21052631578947364,
+      "after_3": 0.009330806239976668,
+      "after_5": 0.0004135537391679408,
+      "posterior_after_5_from_prior_10pct": 4.594830411944043e-05
+    }
+  }
+}

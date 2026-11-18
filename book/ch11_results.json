@@ -1,0 +1,93 @@
+{
+  "seed": 20261122,
+  "controls": {
+    "no_skill": {
+      "strategy_mean_holdout_return": 0.0062068388588942605,
+      "mean_share_of_days_held": 0.6910569999999999,
+      "beta_sd": 0.16857092234867532,
+      "cash": {
+        "beats_control": 0.441425,
+        "mean_incremental": -0.009791542742645841,
+        "sd_incremental": 0.14944213634170947
+      },
+      "buy_and_hold": {
+        "beats_control": 0.421375,
+        "mean_incremental": -0.022966598087083706,
+        "sd_incremental": 0.10254726177842569
+      },
+      "sector_only": {
+        "beats_control": 0.428125,
+        "mean_incremental": -0.01843500924302586,
+        "sd_incremental": 0.12705357736622427
+      },
+      "beta_matched": {
+        "beats_control": 0.426,
+        "mean_incremental": -0.020606959921605262,
+        "sd_incremental": 0.12981561974894204
+      },
+      "exposure_matched": {
+        "beats_control": 0.388525,
+        "mean_incremental": -0.01877215730678269,
+        "sd_incremental": 0.07791215427294661
+      }
+    },
+    "skill": {
+      "strategy_mean_holdout_return": 0.03248976137539562,
+      "mean_share_of_days_held": 0.6908914999999999,
+      "beta_sd": 0.16857092234867532,
+      "cash": {
+        "beats_control": 0.51215,
+        "mean_incremental": 0.016491379773855525,
+        "sd_incremental": 0.15242561132572802
+      },
+      "buy_and_hold": {
+        "beats_control": 0.52955,
+        "mean_incremental": 0.003316324429417658,
+        "sd_incremental": 0.1022258779124442
+      },
+      "sector_only": {
+        "beats_control": 0.51125,
+        "mean_incremental": 0.007847913273475504,
+        "sd_incremental": 0.12920174426452963
+      },
+      "beta_matched": {
+        "beats_control": 0.508475,
+        "mean_incremental": 0.005675962594896103,
+        "sd_incremental": 0.13162220929785204
+      },
+      "exposure_matched": {
+        "beats_control": 0.520775,
+        "mean_incremental": 0.007246619126656534,
+        "sd_incremental": 0.07937237893680575
+      }
+    },
+    "separation": {
+      "cash": 0.17587357327657377,
+      "buy_and_hold": 0.2563005784912228,
+      "sector_only": 0.2068648759156338,
+      "beta_matched": 0.20246348295629937,
+      "exposure_matched": 0.3339501606166435
+    }
+  },
+  "search_size": {
+    "three_screens_a_day": {
+      "trials_a_year": 3780,
+      "expected_best_sharpe_no_skill": 2.5567702322258583
+    },
+    "three_confirmations_a_day": {
+      "trials_a_year": 22680,
+      "expected_best_sharpe_no_skill": 2.8683250337937443
+    },
+    "ten_screens_a_day": {
+      "trials_a_year": 12600,
+      "expected_best_sharpe_no_skill": 2.7696004820099285
+    }
+  },
+  "families_any_pass_at_5pct": {
+    "1": 0.050000000000000044,
+    "10": 0.4012630607616213,
+    "50": 0.9230550247232868,
+    "250": 0.9999973028734621,
+    "750": 1.0
+  }
+}

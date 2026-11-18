@@ -1,0 +1,113 @@
+{
+  "seed": 20261118,
+  "constant_volatility": {
+    "0.1": {
+      "theory": 0.03509935336994161,
+      "simulated_daily_closes": 0.029995
+    },
+    "0.2": {
+      "theory": 0.2920637273581491,
+      "simulated_daily_closes": 0.26208
+    },
+    "0.4": {
+      "theory": 0.5983306922708718,
+      "simulated_daily_closes": 0.550275
+    }
+  },
+  "clustering": {
+    "base_rate": 0.14824343152866243,
+    "intercept": 0.48830355799923336,
+    "slope_on_log_vol": 1.1763959018020353,
+    "auc": 0.6015652107472155,
+    "brier": 0.12373681262411403,
+    "brier_base_rate": 0.12626735655319432,
+    "brier_skill": 0.0200411570983845,
+    "reliability_term": 3.622786407157564e-05,
+    "by_trailing_vol_quintile": [
+      {
+        "median_trailing_vol": 0.09629712325826054,
+        "event_rate": 0.09900975318471338,
+        "model_probability": 0.09163241125680716,
+        "constant_vol_formula": 0.028652265223960666
+      },
+      {
+        "median_trailing_vol": 0.12006669633529785,
+        "event_rate": 0.1188047372611465,
+        "model_probability": 0.11855971360588187,
+        "constant_vol_formula": 0.07925363901393918
+      },
+      {
+        "median_trailing_vol": 0.14091146996522785,
+        "event_rate": 0.13473825636942674,
+        "model_probability": 0.13999678031687948,
+        "constant_vol_formula": 0.13480634320157556
+      },
+      {
+        "median_trailing_vol": 0.1670773775361851,
+        "event_rate": 0.1608877388535032,
+        "model_probability": 0.16636867728462063,
+        "constant_vol_formula": 0.20723023892165648
+      },
+      {
+        "median_trailing_vol": 0.21794536944075252,
+        "event_rate": 0.22777667197452228,
+        "model_probability": 0.2258217457155899,
+        "constant_vol_formula": 0.3336177612251089
+      }
+    ],
+    "calibration": [
+      {
+        "from": 0,
+        "to": 0.05,
+        "share_of_points": 0.00039510350318471335,
+        "predicted": 0.04579040432402407,
+        "event_rate": 0.07556675062972293
+      },
+      {
+        "from": 0.05,
+        "to": 0.1,
+        "share_of_points": 0.13941182324840765,
+        "predicted": 0.08647112833137503,
+        "event_rate": 0.09544477837822403
+      },
+      {
+        "from": 0.1,
+        "to": 0.2,
+        "share_of_points": 0.7222382563694267,
+        "predicted": 0.14278286463129858,
+        "event_rate": 0.1396448970311628
+      },
+      {
+        "from": 0.2,
+        "to": 0.3,
+        "share_of_points": 0.12594944267515923,
+        "predicted": 0.23174821275243368,
+        "event_rate": 0.2343742592095074
+      },
+      {
+        "from": 0.3,
+        "to": 0.5,
+        "share_of_points": 0.01192078025477707,
+        "predicted": 0.3393779175988899,
+        "event_rate": 0.3767740858240107
+      }
+    ]
+  },
+  "blend": {
+    "auc_good": 0.6698429786728677,
+    "auc_wrong_way": 0.3311501839130326,
+    "auc_blend_60_wrong_40_good": 0.452213364747232,
+    "theory_blend": 0.45144556526797397,
+    "auc_equal_weight_of_two_good": 0.73122241038021,
+    "theory_two_good": 0.7330721881096827
+  },
+  "overlap": {
+    "histories": 300,
+    "points_per_history": 1496,
+    "mean_auc": 0.5982183464403136,
+    "sd_across_histories": 0.052909965509234054,
+    "mean_independent_sample_se": 0.021702962321053926,
+    "mean_block_bootstrap_se": 0.043372173093570006,
+    "block_points": 12
+  }
+}

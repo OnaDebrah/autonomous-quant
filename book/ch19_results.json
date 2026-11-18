@@ -1,0 +1,94 @@
+{
+  "seed": 20261130,
+  "prefix_detection": {
+    "0.001": {
+      "5": 0.004990009995000988,
+      "20": 0.01981113517046529,
+      "100": 0.09520785288629108,
+      "500": 0.3936210551388153
+    },
+    "0.01": {
+      "5": 0.04900995010000009,
+      "20": 0.18209306240276923,
+      "100": 0.6339676587267709,
+      "500": 0.9934295169575854
+    },
+    "0.05": {
+      "5": 0.22621906250000023,
+      "20": 0.6415140775914581,
+      "100": 0.994079470779666,
+      "500": 0.9999999999927255
+    },
+    "0.2": {
+      "5": 0.6723199999999999,
+      "20": 0.9884707849539315,
+      "100": 0.9999999997962964,
+      "500": 1.0
+    }
+  },
+  "tournament": {
+    "2": {
+      "winner_only": 0.050335,
+      "runner_ups_allowed": 0.097985,
+      "theory_runner_ups": 0.09750000000000003
+    },
+    "3": {
+      "winner_only": 0.049695,
+      "runner_ups_allowed": 0.142715,
+      "theory_runner_ups": 0.1426250000000001
+    },
+    "6": {
+      "winner_only": 0.05026,
+      "runner_ups_allowed": 0.264615,
+      "theory_runner_ups": 0.2649081093750002
+    }
+  },
+  "pbo_small": {
+    "2": {
+      "mean_pbo": 0.49609583333333335,
+      "sd_across_runs": 0.3000505290490902,
+      "share_of_runs_below_0.5": 0.505
+    },
+    "3": {
+      "mean_pbo": 0.6810416666666668,
+      "sd_across_runs": 0.2711942691083686,
+      "share_of_runs_below_0.5": 0.2275
+    },
+    "20": {
+      "mean_pbo": 0.5134916666666667,
+      "sd_across_runs": 0.19087041833983134,
+      "share_of_runs_below_0.5": 0.4575
+    }
+  },
+  "paired_fix": {
+    "0.5": {
+      "sd_of_difference_over_sd_of_strategy": 1.0,
+      "power_paired": 0.12795,
+      "power_judged_alone": 0.1295
+    },
+    "0.9": {
+      "sd_of_difference_over_sd_of_strategy": 0.44721359549995787,
+      "power_paired": 0.30555,
+      "power_judged_alone": 0.1283
+    },
+    "0.98": {
+      "sd_of_difference_over_sd_of_strategy": 0.2000000000000001,
+      "power_paired": 0.80875,
+      "power_judged_alone": 0.1298
+    }
+  },
+  "real_ideas_stopped_by_memory": {
+    "0.17": {
+      "stopped_after_1_failures": 0.83,
+      "stopped_after_2_failures": 0.6889,
+      "stopped_after_3_failures": 0.5717869999999999,
+      "stopped_after_5_failures": 0.3939040642999999
+    },
+    "0.45": {
+      "stopped_after_1_failures": 0.55,
+      "stopped_after_2_failures": 0.30250000000000005,
+      "stopped_after_3_failures": 0.16637500000000005,
+      "stopped_after_5_failures": 0.05032843750000002
+    }
+  }
+}

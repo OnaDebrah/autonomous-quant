@@ -1,0 +1,66 @@
+{
+  "seed": 20261116,
+  "filter_against_smoother": {
+    "drift_regimes": {
+      "filtered": {
+        "names_true_state": 0.5529057539682539,
+        "mean_sharpe": 0.9903381828073173
+      },
+      "smoothed": {
+        "names_true_state": 0.6263680555555555,
+        "mean_sharpe": 2.811154687322436
+      },
+      "true_state_known": {
+        "names_true_state": 1.0,
+        "mean_sharpe": 2.142407153718018
+      },
+      "buy_and_hold": {
+        "mean_sharpe": 0.014804473286558107
+      }
+    },
+    "volatility_regimes": {
+      "filtered": {
+        "names_true_state": 0.9019434523809524
+      },
+      "smoothed": {
+        "names_true_state": 0.9497222222222222
+      }
+    }
+  },
+  "detection_delay": {
+    "volatility_doubles": {
+      "information_per_day": 0.8068528194400547,
+      "threshold": 3.667233467102051,
+      "false_alarm_spacing": 500.64366666666666,
+      "mean_delay_days": 6.525,
+      "median_delay_days": 5.0,
+      "first_order_theory_days": 7.702282186650904
+    },
+    "drift_turns_up": {
+      "information_per_day": 0.03125,
+      "threshold": 2.677811622619629,
+      "false_alarm_spacing": 501.14233333333334,
+      "mean_delay_days": 65.51925,
+      "median_delay_days": 53.0,
+      "first_order_theory_days": 198.86745914951013
+    }
+  },
+  "consecutive": {
+    "0.9_3": {
+      "theory_days": 3.7174211248285314,
+      "mean_days": 3.72035
+    },
+    "0.8_3": {
+      "theory_days": 4.765625,
+      "mean_days": 4.7612
+    },
+    "0.9_2": {
+      "theory_days": 2.3456790123456788,
+      "mean_days": 2.3581
+    },
+    "0.6_3": {
+      "theory_days": 9.074074074074074,
+      "mean_days": 9.14335
+    }
+  }
+}
