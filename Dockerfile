@@ -7,7 +7,7 @@ RUN useradd --uid 10001 --user-group --create-home aq \
     && install -d -o aq -g aq /data
 
 WORKDIR /app
-COPY pyproject.toml README.md LICENSE ./
+COPY pyproject.toml LICENSE ./
 COPY src/ ./src/
 
 ARG AQ_EXTRAS=""
