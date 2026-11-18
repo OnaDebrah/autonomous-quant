@@ -15,5 +15,4 @@ RUN python -m pip install --no-cache-dir ".${AQ_EXTRAS}"
 
 WORKDIR /data
 USER aq
-ENTRYPOINT ["aq"]
-CMD ["--help"]
+CMD ["python", "--version"]
