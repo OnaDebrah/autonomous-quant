@@ -1,0 +1,56 @@
+{
+  "seed": 20261111,
+  "bars": 504,
+  "null_sharpe_sd": 0.7071067811865476,
+  "rows": [
+    {
+      "tries": 10,
+      "repeats": 2000,
+      "theory_expected_best": 1.1134091365263987,
+      "mean_best": 1.0610813787250963,
+      "p5_best": 0.4332433826538241,
+      "p95_best": 1.772909158312051,
+      "share_of_runs_best_above_2": 0.017,
+      "mean_tries_above_1": 0.751,
+      "mean_tries_above_2": 0.017
+    },
+    {
+      "tries": 100,
+      "repeats": 2000,
+      "theory_expected_best": 1.7894064662732079,
+      "mean_best": 1.781718132112078,
+      "p5_best": 1.3494591720577536,
+      "p95_best": 2.346433705137973,
+      "share_of_runs_best_above_2": 0.22,
+      "mean_tries_above_1": 7.8595,
+      "mean_tries_above_2": 0.2465
+    },
+    {
+      "tries": 1000,
+      "repeats": 1000,
+      "theory_expected_best": 2.3017184958900594,
+      "mean_best": 2.3153704824903754,
+      "p5_best": 1.9789437980517601,
+      "p95_best": 2.800845107135687,
+      "share_of_runs_best_above_2": 0.923,
+      "mean_tries_above_1": 79.097,
+      "mean_tries_above_2": 2.476
+    },
+    {
+      "tries": 10000,
+      "repeats": 200,
+      "theory_expected_best": 2.729902299220015,
+      "mean_best": 2.7212268994194786,
+      "p5_best": 2.414815366167935,
+      "p95_best": 3.1377209329420013,
+      "share_of_runs_best_above_2": 1.0,
+      "mean_tries_above_1": 790.23,
+      "mean_tries_above_2": 23.52
+    }
+  ],
+  "worked_example": {
+    "alpha": 0.016947426762344633,
+    "power": 0.23975006109347674,
+    "false_discovery_share": 0.8749703280686699
+  }
+}

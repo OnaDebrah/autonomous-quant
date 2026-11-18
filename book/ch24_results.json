@@ -1,0 +1,200 @@
+{
+  "loss_limits_share_stopped_within_a_year": {
+    "vol_0.1_limit_0.05": {
+      "sharpe_0.0": 0.6235380828622543,
+      "sharpe_1.0": 0.32418059087827666,
+      "sharpe_2.0": 0.13197326706610096
+    },
+    "vol_0.1_limit_0.1": {
+      "sharpe_0.0": 0.30765362479866354,
+      "sharpe_1.0": 0.08452534027105398,
+      "sharpe_2.0": 0.014718573080061702
+    },
+    "vol_0.1_limit_0.2": {
+      "sharpe_0.0": 0.028652290031142464,
+      "sharpe_1.0": 0.002174181144021989,
+      "sharpe_2.0": 7.914870054151417e-05
+    },
+    "vol_0.2_limit_0.05": {
+      "sharpe_0.0": 0.8175649129814213,
+      "sharpe_1.0": 0.5901682219692819,
+      "sharpe_2.0": 0.37395811973702725
+    },
+    "vol_0.2_limit_0.1": {
+      "sharpe_0.0": 0.6296441493382624,
+      "sharpe_1.0": 0.32689803609363666,
+      "sharpe_2.0": 0.13124007527767492
+    },
+    "vol_0.2_limit_0.2": {
+      "sharpe_0.0": 0.29493969095609335,
+      "sharpe_1.0": 0.077561939633949,
+      "sharpe_2.0": 0.012574188083759097
+    },
+    "vol_0.4_limit_0.05": {
+      "sharpe_0.0": 0.9195195647663793,
+      "sharpe_1.0": 0.7868175463206858,
+      "sharpe_2.0": 0.6273610255504605
+    },
+    "vol_0.4_limit_0.1": {
+      "sharpe_0.0": 0.8319883441355002,
+      "sharpe_1.0": 0.605843721148353,
+      "sharpe_2.0": 0.3828618189011153
+    },
+    "vol_0.4_limit_0.2": {
+      "sharpe_0.0": 0.6405591317713091,
+      "sharpe_1.0": 0.3312384509206414,
+      "sharpe_2.0": 0.12903438911327048
+    }
+  },
+  "human_gate": {
+    "prior_0.5_approves_0.99_of_good_0.99_of_bad": {
+      "share_approved": 0.99,
+      "bad_among_approved": 0.5,
+      "bad_without_gate": 0.5,
+      "good_lost": 0.010000000000000009
+    },
+    "prior_0.5_approves_0.95_of_good_0.8_of_bad": {
+      "share_approved": 0.875,
+      "bad_among_approved": 0.4571428571428572,
+      "bad_without_gate": 0.5,
+      "good_lost": 0.050000000000000044
+    },
+    "prior_0.5_approves_0.9_of_good_0.4_of_bad": {
+      "share_approved": 0.65,
+      "bad_among_approved": 0.3076923076923077,
+      "bad_without_gate": 0.5,
+      "good_lost": 0.09999999999999998
+    },
+    "prior_0.5_approves_0.8_of_good_0.1_of_bad": {
+      "share_approved": 0.45,
+      "bad_among_approved": 0.11111111111111112,
+      "bad_without_gate": 0.5,
+      "good_lost": 0.19999999999999996
+    },
+    "prior_0.9_approves_0.99_of_good_0.99_of_bad": {
+      "share_approved": 0.99,
+      "bad_among_approved": 0.09999999999999998,
+      "bad_without_gate": 0.09999999999999998,
+      "good_lost": 0.010000000000000009
+    },
+    "prior_0.9_approves_0.95_of_good_0.8_of_bad": {
+      "share_approved": 0.9349999999999999,
+      "bad_among_approved": 0.0855614973262032,
+      "bad_without_gate": 0.09999999999999998,
+      "good_lost": 0.050000000000000044
+    },
+    "prior_0.9_approves_0.9_of_good_0.4_of_bad": {
+      "share_approved": 0.8500000000000001,
+      "bad_among_approved": 0.04705882352941175,
+      "bad_without_gate": 0.09999999999999998,
+      "good_lost": 0.09999999999999998
+    },
+    "prior_0.9_approves_0.8_of_good_0.1_of_bad": {
+      "share_approved": 0.7300000000000001,
+      "bad_among_approved": 0.013698630136986297,
+      "bad_without_gate": 0.09999999999999998,
+      "good_lost": 0.19999999999999996
+    }
+  },
+  "fading_edge": {
+    "1.0": {
+      "years_of_life_needed_for_20_to_1": 11.982929094215963,
+      "half_life_0.5y": {
+        "total_information_nats": 0.125,
+        "best_odds_ever": 1.1331484530668263
+      },
+      "half_life_1.0y": {
+        "total_information_nats": 0.25,
+        "best_odds_ever": 1.2840254166877414
+      },
+      "half_life_2.0y": {
+        "total_information_nats": 0.5,
+        "best_odds_ever": 1.6487212707001282
+      },
+      "half_life_5.0y": {
+        "total_information_nats": 1.25,
+        "best_odds_ever": 3.4903429574618414
+      }
+    },
+    "1.5": {
+      "years_of_life_needed_for_20_to_1": 5.325746264095984,
+      "half_life_0.5y": {
+        "total_information_nats": 0.28125,
+        "best_odds_ever": 1.3247847587288655
+      },
+      "half_life_1.0y": {
+        "total_information_nats": 0.5625,
+        "best_odds_ever": 1.7550546569602985
+      },
+      "half_life_2.0y": {
+        "total_information_nats": 1.125,
+        "best_odds_ever": 3.080216848918031
+      },
+      "half_life_5.0y": {
+        "total_information_nats": 2.8125,
+        "best_odds_ever": 16.651494963610144
+      }
+    },
+    "2.0": {
+      "years_of_life_needed_for_20_to_1": 2.995732273553991,
+      "half_life_0.5y": {
+        "total_information_nats": 0.5,
+        "best_odds_ever": 1.6487212707001282
+      },
+      "half_life_1.0y": {
+        "total_information_nats": 1.0,
+        "best_odds_ever": 2.718281828459045
+      },
+      "half_life_2.0y": {
+        "total_information_nats": 2.0,
+        "best_odds_ever": 7.38905609893065
+      },
+      "half_life_5.0y": {
+        "total_information_nats": 5.0,
+        "best_odds_ever": 148.4131591025766
+      }
+    },
+    "3.0": {
+      "years_of_life_needed_for_20_to_1": 1.331436566023996,
+      "half_life_0.5y": {
+        "total_information_nats": 1.125,
+        "best_odds_ever": 3.080216848918031
+      },
+      "half_life_1.0y": {
+        "total_information_nats": 2.25,
+        "best_odds_ever": 9.487735836358526
+      },
+      "half_life_2.0y": {
+        "total_information_nats": 4.5,
+        "best_odds_ever": 90.01713130052181
+      },
+      "half_life_5.0y": {
+        "total_information_nats": 11.25,
+        "best_odds_ever": 76879.91976467776
+      }
+    }
+  },
+  "capacity_net_return": {
+    "gross_0.1_turnover_20": {
+      "0.0001": 0.0976,
+      "0.001": 0.0924105336155959,
+      "0.01": 0.07600000000000001,
+      "0.05": 0.046334368540005055,
+      "participation_at_zero_net": 0.17361111111111113
+    },
+    "gross_0.1_turnover_100": {
+      "0.0001": 0.08800000000000001,
+      "0.001": 0.062052668077979455,
+      "0.01": -0.020000000000000004,
+      "0.05": -0.16832815729997472,
+      "participation_at_zero_net": 0.006944444444444446
+    },
+    "gross_0.05_turnover_20": {
+      "0.0001": 0.0476,
+      "0.001": 0.042410533615595894,
+      "0.01": 0.026000000000000002,
+      "0.05": -0.0036656314599949474,
+      "participation_at_zero_net": 0.04340277777777778
+    }
+  }
+}

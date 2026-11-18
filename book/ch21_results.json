@@ -1,0 +1,109 @@
+{
+  "seed": 20261202,
+  "retries": {
+    "0.05": {
+      "1": {
+        "completes": 0.95,
+        "expected_attempts": 1.0
+      },
+      "2": {
+        "completes": 0.9975,
+        "expected_attempts": 1.05
+      },
+      "4": {
+        "completes": 0.99999375,
+        "expected_attempts": 1.0526250000000001
+      },
+      "8": {
+        "completes": 0.9999999999609375,
+        "expected_attempts": 1.05263157890625
+      }
+    },
+    "0.3": {
+      "1": {
+        "completes": 0.7,
+        "expected_attempts": 1.0
+      },
+      "2": {
+        "completes": 0.91,
+        "expected_attempts": 1.3
+      },
+      "4": {
+        "completes": 0.9919,
+        "expected_attempts": 1.417
+      },
+      "8": {
+        "completes": 0.99993439,
+        "expected_attempts": 1.4284777
+      }
+    },
+    "0.6": {
+      "1": {
+        "completes": 0.4,
+        "expected_attempts": 1.0
+      },
+      "2": {
+        "completes": 0.64,
+        "expected_attempts": 1.5999999999999999
+      },
+      "4": {
+        "completes": 0.8704000000000001,
+        "expected_attempts": 2.176
+      },
+      "8": {
+        "completes": 0.98320384,
+        "expected_attempts": 2.4580096
+      }
+    }
+  },
+  "leases": {
+    "median_minutes": 9.998481454282103,
+    "p99_minutes": 64.20335448057861,
+    "lease_15_min_expires_on_a_live_worker": 0.3055445,
+    "lease_30_min_expires_on_a_live_worker": 0.084587,
+    "lease_60_min_expires_on_a_live_worker": 0.0125475,
+    "lease_120_min_expires_on_a_live_worker": 0.000911
+  },
+  "late_registration": {
+    "0.0": {
+      "share_still_running_when_found": 0.9413075,
+      "true_share_positive_over_window": 0.4865325,
+      "backdated_among_those_found": 0.5168688234184897,
+      "true_mean_return": 0.00208341360496738,
+      "backdated_mean_return": 0.008448528886646904,
+      "fresh_window_mean_daily_return_ratio_to_truth": null,
+      "fresh_window_mean_return": 6.849832126139095e-05
+    },
+    "1.0": {
+      "share_still_running_when_found": 0.9673375,
+      "true_share_positive_over_window": 0.6737075,
+      "backdated_among_those_found": 0.6964554770181038,
+      "true_mean_return": 0.04579424188971881,
+      "backdated_mean_return": 0.050717037114470204,
+      "fresh_window_mean_daily_return_ratio_to_truth": 1.0079053625915013,
+      "fresh_window_mean_return": 0.03199699563782544
+    }
+  },
+  "outage_bar": {
+    "30_to_61": {
+      "bar_before_annual": 1.4661097610114338,
+      "bar_after_annual": 1.6627730130786444,
+      "rise": 0.19666325206721072
+    },
+    "10_to_41": {
+      "bar_before_annual": 1.1134091365263987,
+      "bar_after_annual": 1.555083737991809,
+      "rise": 0.4416746014654101
+    },
+    "60_to_91": {
+      "bar_before_annual": 1.658404191677709,
+      "bar_after_annual": 1.7658161498998313,
+      "rise": 0.10741195822212224
+    },
+    "2_to_33": {
+      "bar_before_annual": 0.3675225284987566,
+      "bar_after_annual": 1.4936932344172607,
+      "rise": 1.126170705918504
+    }
+  }
+}

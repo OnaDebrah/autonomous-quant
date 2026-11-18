@@ -1,0 +1,124 @@
+{
+  "seed": 20261115,
+  "null_scores": {
+    "0.0": {
+      "score_sd": 1.0188451243215197,
+      "mean_top": 1.766739294904634,
+      "mean_top_minus_bottom": 3.2266021814460686,
+      "mean_top_minus_average": 1.7646963229814978
+    },
+    "0.6": {
+      "score_sd": 1.0163540370627326,
+      "mean_top": 1.0843175600369523,
+      "mean_top_minus_bottom": 2.0328940459327014,
+      "mean_top_minus_average": 1.0739238987521842
+    },
+    "expected_max_of_11_normals": 1.5860545769911496
+  },
+  "overlap": {
+    "1": {
+      "theory_score_correlation": 0.9920634920634921,
+      "mean_rank_correlation": 0.9734363636363635,
+      "top3_kept": 0.9291666666666666
+    },
+    "5": {
+      "theory_score_correlation": 0.9603174603174603,
+      "mean_rank_correlation": 0.9243590909090911,
+      "top3_kept": 0.8428333333333332
+    },
+    "21": {
+      "theory_score_correlation": 0.8333333333333334,
+      "mean_rank_correlation": 0.7713909090909092,
+      "top3_kept": 0.6936666666666667
+    },
+    "63": {
+      "theory_score_correlation": 0.5,
+      "mean_rank_correlation": 0.4436977272727273,
+      "top3_kept": 0.4928333333333333
+    },
+    "126": {
+      "theory_score_correlation": 0.0,
+      "mean_rank_correlation": 0.007572727272727274,
+      "top3_kept": 0.2784166666666667
+    }
+  },
+  "quantile_portfolio": {
+    "500_0.02": {
+      "theory_mean_active": 0.002239695363262467,
+      "mean_active": 0.0021835176588864596,
+      "theory_annual_ir": 1.084287855311688,
+      "annual_ir": 1.0369029524843796
+    },
+    "500_0.05": {
+      "theory_mean_active": 0.005599238408156166,
+      "mean_active": 0.005477613465325681,
+      "theory_annual_ir": 2.71071963827922,
+      "annual_ir": 2.6949069344009593
+    },
+    "100_0.05": {
+      "theory_mean_active": 0.005599238408156166,
+      "mean_active": 0.0057504807427271295,
+      "theory_annual_ir": 1.2122706758271953,
+      "annual_ir": 1.2371406676863035
+    },
+    "h": 1.3998096020390416
+  },
+  "coverage": {
+    "thin_share_of_universe": 0.3,
+    "signals": 6,
+    "thin_signals": 2,
+    "thin_share_of_top_decile": 0.59138,
+    "thin_share_of_top_decile_scaled": 0.32277999999999996
+  },
+  "ic_power": {
+    "11_0.05_120": {
+      "ic_sd": 0.3154746656406267,
+      "theory_ic_sd": 0.31622776601683794,
+      "theory_t": 1.7320508075688776,
+      "mean_t": 1.5202310756677275,
+      "share_t_above_2": 0.3205
+    },
+    "11_0.1_120": {
+      "ic_sd": 0.3143719447210334,
+      "theory_ic_sd": 0.31622776601683794,
+      "theory_t": 3.4641016151377553,
+      "mean_t": 3.06997369521479,
+      "share_t_above_2": 0.85175
+    },
+    "500_0.02_120": {
+      "ic_sd": 0.04477553757809985,
+      "theory_ic_sd": 0.04476614810358452,
+      "theory_t": 4.894078054138491,
+      "mean_t": 4.666918261467923,
+      "share_t_above_2": 0.99575
+    },
+    "500_0.05_60": {
+      "ic_sd": 0.04475239604926449,
+      "theory_ic_sd": 0.04476614810358452,
+      "theory_t": 8.651589449343977,
+      "mean_t": 8.343278257405625,
+      "share_t_above_2": 1.0
+    }
+  },
+  "volatility_and_the_top": {
+    "seed": 202611151,
+    "runs": 20000,
+    "note": "zero-drift sectors, daily volatility from 0.72% to 2.16%",
+    "simple": {
+      "mean_top": 1.7568857205297144,
+      "mean_score_low_vol": 0.004641419205460298,
+      "mean_score_high_vol": 0.00898094215732131,
+      "top_is_3_most_volatile": 0.28055,
+      "top_is_3_least_volatile": 0.26625,
+      "bottom_is_3_most_volatile": 0.25435
+    },
+    "log": {
+      "mean_top": 1.52431630857039,
+      "mean_score_low_vol": -0.035001887345959166,
+      "mean_score_high_vol": -0.11153329946677686,
+      "top_is_3_most_volatile": 0.2612,
+      "top_is_3_least_volatile": 0.2857,
+      "bottom_is_3_most_volatile": 0.285
+    }
+  }
+}

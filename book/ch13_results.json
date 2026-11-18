@@ -1,0 +1,193 @@
+{
+  "seed": 20261124,
+  "family_size_of_rule": {
+    "1": {
+      "bar": 0.0,
+      "threshold": 1.6448536269514722,
+      "chance_a_null_family_passes": 0.050000000000000044,
+      "simulated": 0.049965,
+      "threshold_for_5pct_family": 1.6448536269514722,
+      "threshold_for_1pct_family": 2.3263478740408408
+    },
+    "5": {
+      "bar": 1.1925940010147893,
+      "threshold": 2.8374476279662613,
+      "chance_a_null_family_passes": 0.011317367866675032,
+      "simulated": 0.01083,
+      "threshold_for_5pct_family": 2.318679209826409,
+      "threshold_for_1pct_family": 2.8768946367382617
+    },
+    "10": {
+      "bar": 1.57459830134575,
+      "threshold": 3.2194519282972225,
+      "chance_a_null_family_passes": 0.00640326865159313,
+      "simulated": 0.006615,
+      "threshold_for_5pct_family": 2.5678753685925684,
+      "threshold_for_1pct_family": 3.0888901014508092
+    },
+    "20": {
+      "bar": 1.9007079511811988,
+      "threshold": 3.545561578132671,
+      "chance_a_null_family_passes": 0.003910492192610304,
+      "simulated": 0.003935,
+      "threshold_for_5pct_family": 2.799211472482397,
+      "threshold_for_1pct_family": 3.2891845691161707
+    },
+    "50": {
+      "bar": 2.2763030934203483,
+      "threshold": 3.9211567203718207,
+      "chance_a_null_family_passes": 0.002200746409036447,
+      "simulated": 0.002215,
+      "threshold_for_5pct_family": 3.0827926681604003,
+      "threshold_for_1pct_family": 3.5387850452556022
+    },
+    "100": {
+      "bar": 2.5306028932016846,
+      "threshold": 4.175456520153157,
+      "chance_a_null_family_passes": 0.0014858513538675844,
+      "simulated": 0.00154,
+      "threshold_for_5pct_family": 3.2834075352738954,
+      "threshold_for_1pct_family": 3.717760585229831
+    },
+    "1000": {
+      "bar": 3.255121513652723,
+      "threshold": 4.899975140604195,
+      "chance_a_null_family_passes": 0.0004791292070951414,
+      "simulated": 0.00055,
+      "threshold_for_5pct_family": 3.8843975012078267,
+      "threshold_for_1pct_family": 4.263770714907746
+    }
+  },
+  "scorecard": {
+    "single_test_5pct": {
+      "threshold": 1.6448536269514722,
+      "false_pass_rate": 0.10808333333333334,
+      "power": 0.8883333333333333,
+      "false_discovery_share": 0.32735991923271074
+    },
+    "max_test_5pct": {
+      "threshold": 2.799211472482397,
+      "false_pass_rate": 0.005166666666666667,
+      "power": 0.445,
+      "false_discovery_share": 0.04438081603435934
+    },
+    "max_test_1pct": {
+      "threshold": 3.2891845691161707,
+      "false_pass_rate": 0.0013333333333333333,
+      "power": 0.23866666666666667,
+      "false_discovery_share": 0.02185792349726776
+    },
+    "deflated_0.95": {
+      "threshold": 3.545561578132671,
+      "false_pass_rate": 0.0005,
+      "power": 0.16666666666666666,
+      "false_discovery_share": 0.011857707509881422
+    }
+  },
+  "measured_spread": {
+    "0.0": {
+      "theory_bar_ratio": 1.0,
+      "mean_bar_ratio": 0.6994627981553567,
+      "passes_a_real_try_measured_spread": 0.0,
+      "passes_a_real_try_no_skill_spread": 0.0
+    },
+    "0.25": {
+      "theory_bar_ratio": 1.357847561400027,
+      "mean_bar_ratio": 1.1691746398991687,
+      "passes_a_real_try_measured_spread": 0.118,
+      "passes_a_real_try_no_skill_spread": 0.238
+    },
+    "0.5": {
+      "theory_bar_ratio": 1.4577379737113252,
+      "mean_bar_ratio": 1.2937136005054333,
+      "passes_a_real_try_measured_spread": 0.13133333333333333,
+      "passes_a_real_try_no_skill_spread": 0.3313333333333333
+    },
+    "0.75": {
+      "theory_bar_ratio": 1.357847561400027,
+      "mean_bar_ratio": 1.167981368945405,
+      "passes_a_real_try_measured_spread": 0.255,
+      "passes_a_real_try_no_skill_spread": 0.3933333333333333
+    }
+  },
+  "missed_tries": {
+    "20_of_20": {
+      "bar_used_annual": 1.3440034813354151,
+      "bar_needed_annual": 1.3440034813354151,
+      "chance_a_null_search_passes": 0.003910492192610304
+    },
+    "20_of_40": {
+      "bar_used_annual": 1.3440034813354151,
+      "bar_needed_annual": 1.548196316165402,
+      "chance_a_null_search_passes": 0.007805692436032241
+    },
+    "20_of_200": {
+      "bar_used_annual": 1.3440034813354151,
+      "bar_needed_annual": 1.9555207064998803,
+      "chance_a_null_search_passes": 0.03842391122088318
+    },
+    "20_of_2000": {
+      "bar_used_annual": 1.3440034813354151,
+      "bar_needed_annual": 2.4376032815345954,
+      "chance_a_null_search_passes": 0.3241714206142271
+    }
+  },
+  "record_length": {
+    "1": {
+      "1.0": {
+        "years_for_half_power": 2.705543454095413,
+        "power_on_two_years": 0.4087972197938706
+      },
+      "1.5": {
+        "years_for_half_power": 1.202463757375739,
+        "power_on_two_years": 0.6831290430800078
+      },
+      "2.0": {
+        "years_for_half_power": 0.6763858635238532,
+        "power_on_two_years": 0.881709031778347
+      }
+    },
+    "20": {
+      "1.0": {
+        "years_for_half_power": 12.571006904330636,
+        "power_on_two_years": 0.016530241053120592
+      },
+      "1.5": {
+        "years_for_half_power": 5.587114179702504,
+        "power_on_two_years": 0.07718832609834732
+      },
+      "2.0": {
+        "years_for_half_power": 3.142751726082659,
+        "power_on_two_years": 0.23664556936880204
+      }
+    },
+    "100": {
+      "1.0": {
+        "years_for_half_power": 17.434437151689508,
+        "power_on_two_years": 0.0028790911490229353
+      },
+      "1.5": {
+        "years_for_half_power": 7.748638734084227,
+        "power_on_two_years": 0.01998125675919212
+      },
+      "2.0": {
+        "years_for_half_power": 4.358609287922377,
+        "power_on_two_years": 0.08898538279016038
+      }
+    },
+    "1000": {
+      "1.0": {
+        "years_for_half_power": 24.009756378539105,
+        "power_on_two_years": 0.0002453690875555254
+      },
+      "1.5": {
+        "years_for_half_power": 10.671002834906268,
+        "power_on_two_years": 0.0027292249284604207
+      },
+      "2.0": {
+        "years_for_half_power": 6.002439094634776,
+        "power_on_two_years": 0.019153806081221567
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "seed": 20261117,
+  "sectors": 11,
+  "members": 40,
+  "null_drill_down": {
+    "rho": 0.3,
+    "theory_top_asset_in_top_sector": 2.6771300277232633,
+    "top_asset_in_top_sector": 2.680889160642909,
+    "mean_asset_in_top_sector": 0.8711001115479291,
+    "theory_mean_asset_in_top_sector": 0.8686649794432342,
+    "top_asset_overall": 2.9113801493719453,
+    "top_overall_is_in_top_sector": 0.490425
+  },
+  "skilled_drill_down": {
+    "h": 1.271106290736428,
+    "sector_order_statistics_top3": [
+      1.585872191044052,
+      1.061963830936175,
+      0.7286490533842097
+    ],
+    "one_sector": {
+      "theory_from_sector_stage": 0.002378808286566078,
+      "from_sector_stage": 0.0027314183384121817,
+      "theory_from_asset_stage": 0.0030506550977674267,
+      "from_asset_stage": 0.002787007841551856,
+      "mean_active_monthly": 0.005518426179964038,
+      "active_risk_monthly": 0.03808357013005634,
+      "annual_information_ratio": 0.5019589544191616
+    },
+    "three_sectors": {
+      "theory_from_sector_stage": 0.0016882425376822186,
+      "from_sector_stage": 0.0017980928693170036,
+      "theory_from_asset_stage": 0.0030506550977674267,
+      "from_asset_stage": 0.00289314277458124,
+      "mean_active_monthly": 0.004691235643898244,
+      "active_risk_monthly": 0.020328815592666014,
+      "annual_information_ratio": 0.7994030393429571
+    }
+  }
+}

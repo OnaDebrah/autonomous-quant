@@ -1,0 +1,52 @@
+{
+  "seed": 20261114,
+  "costs": {
+    "0.0": {
+      "theory_traded_per_day": 1.0,
+      "traded_per_day": 0.9994950298210735,
+      "theory_sharpe": -1.984313483298443,
+      "mean_sharpe": -1.9572461639327556
+    },
+    "0.5": {
+      "theory_traded_per_day": 0.6666666666666666,
+      "traded_per_day": 0.6664493041749503,
+      "theory_sharpe": -1.3228756555322954,
+      "mean_sharpe": -1.3046837640031832
+    },
+    "0.9": {
+      "theory_traded_per_day": 0.2871325862574125,
+      "traded_per_day": 0.28880119284294237,
+      "theory_sharpe": -0.5697610624049368,
+      "mean_sharpe": -0.5705396472751912
+    },
+    "0.99": {
+      "theory_traded_per_day": 0.09010682728882426,
+      "traded_per_day": 0.08983101391650099,
+      "theory_sharpe": -0.17880019232645805,
+      "mean_sharpe": -0.18250146838090783
+    }
+  },
+  "constant_share": {
+    "weight": 0.5,
+    "years": 5,
+    "mean_absolute_gap_pct": 2.224492104566997,
+    "p95_absolute_gap_pct": 6.243246120377254,
+    "mean_gap_pct": -0.031191426956208055,
+    "mean_log_gap_against_geometric": 0.022691726888230464,
+    "theory_log_gap_against_geometric": 0.022680000000000002
+  },
+  "skewed_sharpe": {
+    "true_sharpe": 1.5,
+    "skewness": -2,
+    "kurtosis": 9,
+    "simulated_sd": 0.7870408421600568,
+    "formula_sd": 0.7768009331102005,
+    "normal_formula_sd": 0.708683386892301
+  },
+  "drawdown": {
+    "theory_mean_log_drawdown": 0.33764199118810206,
+    "mean_log_drawdown": 0.32483589145023356,
+    "share_beyond_25pct": 0.5253,
+    "median_pct": 25.688333957039553
+  }
+}

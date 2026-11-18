@@ -1,0 +1,73 @@
+{
+  "seed": 20261119,
+  "selection": {
+    "mean_apr_all": 0.10931027641454893,
+    "share_chosen": 0.45966666666666667,
+    "chosen_trailing_apr": 0.3739017092047564,
+    "chosen_following_apr": 0.22529538595163895,
+    "top_of_30_trailing_apr": 0.7353315838793708,
+    "top_of_30_following_apr": 0.37905674689569363,
+    "regression_slope_following_on_trailing": 0.43658160827027204,
+    "chosen_following_below_cash_share": 0.20890137781000725
+  },
+  "cadence": {
+    "3": {
+      "true_apr": 0.1099653667730024,
+      "three_a_day_apr": 0.10996536677300242,
+      "ratio": 1.0000000000000002
+    },
+    "6": {
+      "true_apr": 0.10957996567101347,
+      "three_a_day_apr": 0.054789982835506734,
+      "ratio": 0.5
+    },
+    "24": {
+      "true_apr": 0.10959164652821192,
+      "three_a_day_apr": 0.01369895581602649,
+      "ratio": 0.125
+    }
+  },
+  "missing": {
+    "true_apr": 0.11079598232954027,
+    "true_apr_top_decile": 0.6488514261111609,
+    "random": {
+      "sum_as_if_complete": 0.09973522440583033,
+      "sum_as_if_complete_top_decile": 0.5845342871286309,
+      "mean_of_observed_scaled": 0.1107614786379345,
+      "mean_of_observed_scaled_top_decile": 0.6487699873300646
+    },
+    "at_extremes": {
+      "sum_as_if_complete": 0.0946414394081954,
+      "sum_as_if_complete_top_decile": 0.5333651386128219,
+      "mean_of_observed_scaled": 0.1104150126428946,
+      "mean_of_observed_scaled_top_decile": 0.6222593283816255
+    }
+  },
+  "liquidation": {
+    "2x_0.7_30d": {
+      "adverse_move": 0.49,
+      "theory": 0.0469127433415643,
+      "simulated_hourly": 0.0477
+    },
+    "3x_0.7_30d": {
+      "adverse_move": 0.3233333333333333,
+      "theory": 0.16271558554733023,
+      "simulated_hourly": 0.15615
+    },
+    "5x_0.7_30d": {
+      "adverse_move": 0.19,
+      "theory": 0.38604990461390143,
+      "simulated_hourly": 0.378725
+    },
+    "3x_0.7_7d": {
+      "adverse_move": 0.3233333333333333,
+      "theory": 0.0038525767651114845,
+      "simulated_hourly": 0.00315
+    },
+    "3x_1.0_30d": {
+      "adverse_move": 0.3233333333333333,
+      "theory": 0.3284714026121289,
+      "simulated_hourly": 0.320675
+    }
+  }
+}
