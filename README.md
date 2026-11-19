@@ -10,14 +10,24 @@ controls can be shown to work, on worlds where the truth is planted.
 ## Quick start
 
 ```bash
-pip install -e ".[dev]"          # add ,yahoo for the Yahoo Finance adapter
-pytest                           # the book's checks, including planted truth
-aq benchmark                     # score three judges on planted truth (Chapter 12)
-aq demo                          # search two toy rules on a simulated market, register every try, judge the family
-aq demo --drift 0.003            # the same, in a market with trends
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -e '.[dev]'
+python -m pytest
+aq benchmark
+aq demo
+aq demo --drift 0.003
+aq run
+aq crash-test
+```
+
+Rerun the install command in an existing environment to pick up the `aq` command after updating the package.
+
+The Yahoo Finance demo uses an optional dependency and requires internet access.
+
+```bash
+python -m pip install -e '.[dev,yahoo]'
 aq demo --source yahoo --symbol SPY
-aq run                           # the research loop on a simulated market of eight assets, then its maturity scorecard
-aq crash-test                    # kill the loop repeatedly; it must end exactly where an uninterrupted run ends
 ```
 
 `aq benchmark` prints the scorecard every research system should be judged by (Chapter 12): the false-pass rate, the
@@ -54,8 +64,8 @@ Build the image from the repository root. The image runs `aq`, so pass the subco
 
 ```bash
 docker build -t autonomous-quant .
-docker run --rm autonomous-quant                       # show CLI help
-docker run --rm autonomous-quant demo                  # run on the simulated market
+docker run --rm autonomous-quant
+docker run --rm autonomous-quant demo
 docker run --rm autonomous-quant benchmark
 ```
 
