@@ -143,6 +143,21 @@ def clustering(rng) -> dict:
         b_["share_of_points"] * (b_["predicted"] - b_["event_rate"]) ** 2
         for b_ in bands
     )
+    # Intervals for each band's event rate, resampling whole histories: forecasts within a history overlap (each
+    # looks three months ahead), so points are not independent, but the simulated histories are. Its own random
+    # stream, so adding it left every number above unchanged.
+    boot = np.random.default_rng([SEED, 7])
+    p_by_path, y_by_path = p.reshape(x[half:].shape), fell[half:]
+    for band in bands:
+        inside = (p_by_path >= band["from"]) & (p_by_path < band["to"])
+        n_path, e_path = inside.sum(axis=1), (inside & y_by_path).sum(axis=1)
+        draws = boot.integers(0, len(n_path), size=(1000, len(n_path)))
+        rates = e_path[draws].sum(axis=1) / np.maximum(n_path[draws].sum(axis=1), 1)
+        band["points"] = int(n_path.sum())
+        band["event_rate_95"] = [
+            float(np.quantile(rates, 0.025)),
+            float(np.quantile(rates, 0.975)),
+        ]
     return {
         "base_rate": float(ys.mean()),
         "intercept": a,
