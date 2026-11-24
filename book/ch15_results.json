@@ -25,19 +25,6 @@
       "passes_significance": 0.0228,
       "of_those_fail_walk_forward": 0.0,
       "of_those_fail_holdout": 0.08114035087719298
-    },
-    "one_regime_bursts": {
-      "seed": 202611261,
-      "moderate_burst_100_bars": {
-        "passes_significance": 0.022425,
-        "of_those_fail_walk_forward": 0.0,
-        "of_those_fail_holdout": 0.11148272017837235
-      },
-      "extreme_burst_60_bars": {
-        "passes_significance": 0.527675,
-        "of_those_fail_walk_forward": 0.11309044392855451,
-        "of_those_fail_holdout": 0.35523759890083856
-      }
     }
   },
   "repeated_looks": {
@@ -121,5 +108,11 @@
     "9_clauses_each_passing_99pct_of_true_edges": 0.9135172474836408,
     "9_clauses_each_passing_95pct_of_true_edges": 0.6302494097246091,
     "9_clauses_each_passing_90pct_of_true_edges": 0.3874204890000001
+  },
+  "edge_that_has_gone": {
+    "seed": 202611261,
+    "passes_significance": 0.52895,
+    "of_those_fail_walk_forward": 0.11239247565932507,
+    "of_those_fail_holdout": 0.3581151337555534
   }
 }

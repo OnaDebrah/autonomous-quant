@@ -2,21 +2,21 @@
   "seed": 20261121,
   "proxy_losses": {
     "true_variance": {
-      "qlike": 1.2700725591289768,
-      "mse_variance": 3.2783223430777437,
-      "mae_variance": 1.0957045270771226,
-      "mse_volatility": 0.4577575345908124
+      "qlike": 1.270072559128977,
+      "mse_variance": 3.2783223430777433,
+      "mae_variance": 1.095704527077123,
+      "mse_volatility": 0.4577575345908125
     },
     "half_the_true_variance": {
-      "qlike": 1.5745574033781902,
-      "mse_variance": 3.6851343832992196,
-      "mae_variance": 0.9704683065233445,
-      "mse_volatility": 0.4200290424818529
+      "qlike": 1.57455740337819,
+      "mse_variance": 3.6851343832992183,
+      "mae_variance": 0.9704683065233447,
+      "mse_volatility": 0.42002904248185274
     },
     "one_and_a_half_times": {
-      "qlike": 1.3429936589674216,
-      "mse_variance": 3.697025693319017,
-      "mae_variance": 1.3626665163490972,
+      "qlike": 1.3429936589674218,
+      "mse_variance": 3.697025693319015,
+      "mae_variance": 1.3626665163490967,
       "mse_volatility": 0.6186291285171055
     }
   },
@@ -24,13 +24,13 @@
     "fixed_threshold": {
       "mean_discoveries": 13.62275,
       "mean_false": 4.49995,
-      "false_discovery_rate": 0.3163107460820483,
+      "false_discovery_rate": 0.31631074608204834,
       "power": 0.91228
     },
     "benjamini_hochberg": {
       "mean_discoveries": 6.492,
       "mean_false": 0.3485,
-      "false_discovery_rate": 0.044646505855255855,
+      "false_discovery_rate": 0.04464650585525585,
       "power": 0.61435
     },
     "fixed_threshold_any_pass_when_none_real": 0.99485
@@ -70,6 +70,19 @@
       "any_of_six_bands": 0.0005501900809455895
     }
   },
+  "calibration_rule": {
+    "z": 2.638257273476751,
+    "30": {
+      "calibrated": 0.05618302337591652,
+      "halfway_to_base_rate": 0.5180460521732418,
+      "no_resolution": 0.964488441779118
+    },
+    "100": {
+      "calibrated": 0.025157022081445657,
+      "halfway_to_base_rate": 0.7265990714278349,
+      "no_resolution": 0.9999941972627194
+    }
+  },
   "stability_index": {
     "100": {
       "mean": 0.19094183514227597,
@@ -80,7 +93,7 @@
       "share_above_0.25": 0.22405
     },
     "500": {
-      "mean": 0.036342486636757876,
+      "mean": 0.03634248663675787,
       "theory_mean": 0.036,
       "p95": 0.06893371647865089,
       "theory_p95": 0.0676759104184818,
@@ -88,7 +101,7 @@
       "share_above_0.25": 0.0
     },
     "5000": {
-      "mean": 0.003621515616116233,
+      "mean": 0.0036215156161162327,
       "theory_mean": 0.0036,
       "p95": 0.006858876797479048,
       "theory_p95": 0.006767591041848179,

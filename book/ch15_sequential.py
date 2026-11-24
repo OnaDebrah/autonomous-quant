@@ -5,6 +5,7 @@
 3. Looking at a running test every day.
 4. A sequential test of a candidate against an incumbent, with the error budget split across candidates.
 5. How long a paper record must be before a vanished edge shows.
+6. An edge that has gone: strong for 60 days, then nothing (second seed, SEED_DECAY).
 Run: python book/ch15_sequential.py
 """
 
@@ -18,6 +19,7 @@ import numpy as np
 from scipy.stats import norm
 
 SEED = 20261126
+SEED_DECAY = 202611261
 EULER = 0.5772156649015329
 Z95 = float(norm.ppf(0.95))
 BARS, PERIODS, TRIES = 504, 252, 20
@@ -162,6 +164,23 @@ def conjunction() -> dict:
     }
 
 
+def edge_that_has_gone() -> dict:
+    """One try with a mean of 1.5 standard deviations a day for 60 days and zero for the other 444 (own seed)."""
+    rng = np.random.default_rng(SEED_DECAY)
+    runs = 40_000
+    x = rng.standard_normal((runs, BARS))
+    x[:, :60] += 1.5
+    sig = z_of(x) > m(TRIES) + Z95
+    wf = (x[:, :400].reshape(runs, 5, -1).mean(axis=2) > 0).mean(axis=1) >= 0.6
+    hold = x[:, 400:].mean(axis=1) > 0
+    return {
+        "seed": SEED_DECAY,
+        "passes_significance": float(sig.mean()),
+        "of_those_fail_walk_forward": float((sig & ~wf).sum() / sig.sum()),
+        "of_those_fail_holdout": float((sig & ~hold).sum() / sig.sum()),
+    }
+
+
 def main() -> None:
     rng = np.random.default_rng(SEED)
     out = {
@@ -171,6 +190,7 @@ def main() -> None:
         "sprt": sprt(rng),
         "paper_length": paper_length(),
         "conjunction": conjunction(),
+        "edge_that_has_gone": edge_that_has_gone(),
     }
     Path(__file__).with_name("ch15_results.json").write_text(
         json.dumps(out, indent=2, default=float) + "\n"

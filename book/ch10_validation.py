@@ -95,6 +95,34 @@ def calibration_tolerance() -> dict:
     return out
 
 
+def calibration_rule() -> dict:
+    """The two-part rule: a band fails only if it is off by more than 10 points and by more than z standard errors,
+    with z = 2.64 for six bands. Exact binomial probabilities that at least one of six bands fails, for a calibrated
+    forecaster and for two overconfident ones whose true probabilities lie a share s of the way from the base rate
+    (the mean forecast) to the forecast: s = 0.5, and s = 0, a forecaster with no resolution at all."""
+    probs = (0.05, 0.10, 0.15, 0.20, 0.30, 0.50)
+    z = float(norm.ppf(1 - 0.05 / 12))
+    base = float(np.mean(probs))
+
+    def fail_any(n, true):
+        ok = 1.0
+        for p, q in zip(probs, true):
+            ks = np.arange(n + 1)
+            dev = np.abs(ks / n - p)
+            fail = (dev > 0.10 + 1e-12) & (dev > z * math.sqrt(p * (1 - p) / n) + 1e-12)
+            ok *= 1 - binom.pmf(ks, n, q)[fail].sum()
+        return float(1 - ok)
+
+    out = {"z": z}
+    for n in (30, 100):
+        out[str(n)] = {
+            "calibrated": fail_any(n, probs),
+            "halfway_to_base_rate": fail_any(n, [base + 0.5 * (p - base) for p in probs]),
+            "no_resolution": fail_any(n, [base] * len(probs)),
+        }
+    return out
+
+
 def stability_index(rng) -> dict:
     out, bins, runs = {}, 10, 20_000
     edges = norm.ppf(np.linspace(0, 1, bins + 1)[1:-1])
@@ -200,6 +228,7 @@ def main() -> None:
         "proxy_losses": proxy_losses(rng),
         "many_instruments": many_instruments(rng),
         "calibration_tolerance": calibration_tolerance(),
+        "calibration_rule": calibration_rule(),
         "stability_index": stability_index(rng),
         "pooled": pooled(rng),
         "losing_skill": losing_skill(rng),
